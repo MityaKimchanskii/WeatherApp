@@ -9,8 +9,31 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
+    private let primaryView = SettingsView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        style()
+        layout()
+    }
+}
+
+extension SettingsViewController {
+    private func style() {
         view.backgroundColor = .systemBackground
+        primaryView.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    private func layout() {
+        view.addSubview(primaryView)
+        
+        NSLayoutConstraint.activate([
+            primaryView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            primaryView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            primaryView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            primaryView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
     }
 }
