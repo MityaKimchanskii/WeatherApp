@@ -9,7 +9,13 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
-    private let primaryView = SettingsView()
+    private let primaryView: SettingsView = {
+        let view = SettingsView()
+        let viewModel = SettingsViewViewModel(option: SettingOption.allCases)
+        view.configure(with: viewModel)
+        
+        return view
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -19,6 +19,7 @@
 		3BB196DC2BDEF8A700D42AE2 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB196DB2BDEF8A700D42AE2 /* TabViewController.swift */; };
 		3BB196DE2BDF021A00D42AE2 /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB196DD2BDF021A00D42AE2 /* CurrentWeatherView.swift */; };
 		3BB196E02BDF025F00D42AE2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB196DF2BDF025F00D42AE2 /* SettingsView.swift */; };
+		3BB196E22BDF17E500D42AE2 /* SettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB196E12BDF17E500D42AE2 /* SettingsViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3BB196DB2BDEF8A700D42AE2 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		3BB196DD2BDF021A00D42AE2 /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
 		3BB196DF2BDF025F00D42AE2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3BB196E12BDF17E500D42AE2 /* SettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		3BB196CF2BDEF64B00D42AE2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				3BB196E12BDF17E500D42AE2 /* SettingsViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				3BB196DE2BDF021A00D42AE2 /* CurrentWeatherView.swift in Sources */,
 				3BB196DA2BDEF85600D42AE2 /* SettingsViewController.swift in Sources */,
 				3BB196E02BDF025F00D42AE2 /* SettingsView.swift in Sources */,
+				3BB196E22BDF17E500D42AE2 /* SettingsViewViewModel.swift in Sources */,
 				3BB196D62BDEF70200D42AE2 /* IAPManager.swift in Sources */,
 				3B20133A2BDEE8F2006893F4 /* WeatherViewController.swift in Sources */,
 				3B2013362BDEE8F2006893F4 /* AppDelegate.swift in Sources */,
