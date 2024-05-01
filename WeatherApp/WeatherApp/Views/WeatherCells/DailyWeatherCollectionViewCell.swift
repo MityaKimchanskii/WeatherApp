@@ -21,4 +21,8 @@ class DailyWeatherCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    public func configure(with viewModel: DailyWeatherCollectionViewCellViewModel) {
+        
+    }
 }
