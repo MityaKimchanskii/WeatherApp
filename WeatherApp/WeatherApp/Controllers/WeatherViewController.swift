@@ -42,7 +42,12 @@ extension WeatherViewController {
         LocationManager.shared.getCurrentLocation { location in
             print(String(describing: location))
             
-//            WeatherManager.shared.getWeather(for: location, completion: <#() -> Void#>)
+            WeatherManager.shared.getWeather(for: location) { [weak self] in
+
+                DispatchQueue.main.async {
+                    self?.primaryView.reload()
+                }
+            }
         }
     }
 }

@@ -28,6 +28,7 @@ class SettingsViewController: UIViewController {
 
 extension SettingsViewController {
     private func style() {
+        primaryView.delegate = self
         view.backgroundColor = .systemBackground
         primaryView.translatesAutoresizingMaskIntoConstraints = false
     }
@@ -41,5 +42,25 @@ extension SettingsViewController {
             primaryView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             primaryView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
+    }
+}
+
+extension SettingsViewController: SettingsViewDelegate {
+    func settingsView(_ settingsView: SettingsView, didTap option: SettingOption) {
+        print("Hello")
+        switch option {
+        case .upgrade:
+            break
+        case .privacyPolicy:
+            break
+        case .terms:
+            break
+        case .contact:
+            break
+        case .getHelp:
+            break
+        case .rateApp:
+            break
+        }
     }
 }

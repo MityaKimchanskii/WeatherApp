@@ -7,8 +7,14 @@
 
 import UIKit
 
+protocol SettingsViewDelegate: AnyObject {
+    func settingsView(_ settingsView: SettingsView, didTap option: SettingOption)
+}
+
 
 final class SettingsView: UIView {
+    
+    weak var delegate: SettingsViewDelegate?
     
     private var viewModel: SettingsViewViewModel? {
         didSet {
@@ -20,8 +26,6 @@ final class SettingsView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        backgroundColor = .green
         
         style()
         layout()
@@ -74,5 +78,9 @@ extension SettingsView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard let viewModel else { return }
+        let option = viewModel.option[indexPath.row]
+        delegate?.settingsView(self, didTap: option)
     }
 }
