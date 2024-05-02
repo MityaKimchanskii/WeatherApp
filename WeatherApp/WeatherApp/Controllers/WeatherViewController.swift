@@ -25,6 +25,8 @@ extension WeatherViewController {
     private func style() {
         view.backgroundColor = .systemBackground
         primaryView.translatesAutoresizingMaskIntoConstraints = false
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "crown"), style: .done, target: self, action: #selector(didTapUpgrade))
     }
     
     private func layout() {
@@ -51,6 +53,10 @@ extension WeatherViewController {
                 }
             }
         }
+    }
+    
+    @objc private func didTapUpgrade() {
+        print("Hello")
     }
 }
 
