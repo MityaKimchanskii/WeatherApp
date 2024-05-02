@@ -30,6 +30,7 @@
 		3BD4A3C82BE2DF4900397B3D /* DailyWeatherCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD4A3C72BE2DF4900397B3D /* DailyWeatherCollectionViewCellViewModel.swift */; };
 		3BD4A3CD2BE3362100397B3D /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 3BD4A3CC2BE3362100397B3D /* RevenueCat */; };
 		3BD4A3CF2BE3362100397B3D /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3BD4A3CE2BE3362100397B3D /* RevenueCatUI */; };
+		3BD4A3D22BE3479D00397B3D /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 3BD4A3D12BE3479D00397B3D /* StoreKitTestCertificate.cer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		3BD4A3C52BE2DF2600397B3D /* HourlyWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		3BD4A3C72BE2DF4900397B3D /* DailyWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		3BD4A3D02BE338D700397B3D /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		3BD4A3D12BE3479D00397B3D /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = StoreKitTestCertificate.cer; path = ../../../StoreKitTestCertificate.cer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				3B20133E2BDEE8F4006893F4 /* Assets.xcassets */,
 				3B2013432BDEE8F4006893F4 /* Info.plist */,
 				3BD4A3D02BE338D700397B3D /* Configuration.storekit */,
+				3BD4A3D12BE3479D00397B3D /* StoreKitTestCertificate.cer */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			files = (
 				3B20133F2BDEE8F4006893F4 /* Assets.xcassets in Resources */,
 				3B2013422BDEE8F4006893F4 /* Base in Resources */,
+				3BD4A3D22BE3479D00397B3D /* StoreKitTestCertificate.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
