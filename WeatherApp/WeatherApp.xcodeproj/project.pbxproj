@@ -28,6 +28,8 @@
 		3BD4A3C42BE2DEE800397B3D /* CurrentWeatherCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD4A3C32BE2DEE800397B3D /* CurrentWeatherCollectionViewCellViewModel.swift */; };
 		3BD4A3C62BE2DF2600397B3D /* HourlyWeatherCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD4A3C52BE2DF2600397B3D /* HourlyWeatherCollectionViewCellViewModel.swift */; };
 		3BD4A3C82BE2DF4900397B3D /* DailyWeatherCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD4A3C72BE2DF4900397B3D /* DailyWeatherCollectionViewCellViewModel.swift */; };
+		3BD4A3CD2BE3362100397B3D /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 3BD4A3CC2BE3362100397B3D /* RevenueCat */; };
+		3BD4A3CF2BE3362100397B3D /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3BD4A3CE2BE3362100397B3D /* RevenueCatUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,7 @@
 		3BD4A3C32BE2DEE800397B3D /* CurrentWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		3BD4A3C52BE2DF2600397B3D /* HourlyWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		3BD4A3C72BE2DF4900397B3D /* DailyWeatherCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		3BD4A3D02BE338D700397B3D /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BD4A3CF2BE3362100397B3D /* RevenueCatUI in Frameworks */,
+				3BD4A3CD2BE3362100397B3D /* RevenueCat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +151,7 @@
 				3B2013402BDEE8F4006893F4 /* LaunchScreen.storyboard */,
 				3B20133E2BDEE8F4006893F4 /* Assets.xcassets */,
 				3B2013432BDEE8F4006893F4 /* Info.plist */,
+				3BD4A3D02BE338D700397B3D /* Configuration.storekit */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -186,6 +192,10 @@
 			dependencies = (
 			);
 			name = WeatherApp;
+			packageProductDependencies = (
+				3BD4A3CC2BE3362100397B3D /* RevenueCat */,
+				3BD4A3CE2BE3362100397B3D /* RevenueCatUI */,
+			);
 			productName = WeatherApp;
 			productReference = 3B2013322BDEE8F2006893F4 /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -214,6 +224,9 @@
 				Base,
 			);
 			mainGroup = 3B2013292BDEE8F2006893F4;
+			packageReferences = (
+				3BD4A3CB2BE3362100397B3D /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
+			);
 			productRefGroup = 3B2013332BDEE8F2006893F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -473,6 +486,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3BD4A3CB2BE3362100397B3D /* XCRemoteSwiftPackageReference "purchases-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.41.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BD4A3CC2BE3362100397B3D /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BD4A3CB2BE3362100397B3D /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			productName = RevenueCat;
+		};
+		3BD4A3CE2BE3362100397B3D /* RevenueCatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BD4A3CB2BE3362100397B3D /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			productName = RevenueCatUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B20132A2BDEE8F2006893F4 /* Project object */;
 }

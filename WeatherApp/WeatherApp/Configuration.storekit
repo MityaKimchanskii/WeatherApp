@@ -1,0 +1,126 @@
+{
+  "identifier" : "BD63305A",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "5AE14A20",
+      "localizations" : [
+
+      ],
+      "name" : "DKWeatherApp Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "0A76F780",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlock daily forecast and more",
+              "displayName" : "Pro Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "dmitriikim.WeatherApp.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Pro Monthly",
+          "subscriptionGroupID" : "5AE14A20",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "3.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "2DD2D54D",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlock daily forecast and more",
+              "displayName" : "Pro Yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "dmitriikim.WeatherApp.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Pro Yearly",
+          "subscriptionGroupID" : "5AE14A20",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}
